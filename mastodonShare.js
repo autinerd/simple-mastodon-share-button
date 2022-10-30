@@ -4,7 +4,7 @@ function mastodonShareButtonClick(e) {
     if (mastodonInstance == null) {
         return;
     }
-    let href = document.location;
+    let href = document.URL;
     let title = document.title;
     if ('data-title' in btn.attributes && 'data-href' in btn.attributes) {
         href = btn.attributes['data-href'].value;
